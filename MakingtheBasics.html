@@ -40,4 +40,83 @@ no longer available-->
 <img src=https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg?w=990&crop=1
  alt="Image of Code">
 
+<!-- This is an anchor element, it links and element to another website/page,
+so if you were to click on the underlined word/phrase/etc.
+it would redirect you to somewhere else, it uses the attribute "href" followed
+by the link you want person to be directed to if they click it -->
+<a href="https://www.freecodecamp.org/learn/"> Click here to learn how to code!
+</a>
+
+<!-- You can also make anchor elements that'll link to internal sections of your
+website! For example, if you have a long page/website about a research paper
+having multiple sections, you can have an anchor element at the top for that
+person to click to be directed to the summary, to make this it would be the same
+as linking to an external website/page but the "href" attribute would equal
+"id" of the element where you want the person to be directed to using a # before
+the name of the id -->
+<a href="#summary">Summary</a>
+...
+<h2 id="summary">Summary</a>
+
+<!-- You can nest an Anchor Element within a paragraph! Some key things to know
+is that the "target" is an attribute that specifies where to open the link with
+the value "_blank specifying to open it in a new tab". Here's is an example -->
+<p>
+  Here's a link to my own personal <a target="_blank"
+  href= "https://www.linkedin.com/in/benson-manzano-380a451b7/">
+  LinkedIn!</a> Hope you enjoy!
+</p>
+
+<!-- You can make dead links using the hashtag symbol, this means it would be
+linked but it wouldn't take you anywhere, this will come in handy when using
+Javascript -->
+<a target="_blank" href="#">This is a dead link</a>
+
+<!-- You can also turn an image into a link! Meaning if they clicked on the
+image they would be redirected to another website/page! This is done by nesting
+the "img" within the anchor("a") element, below is an example with a dead link-->
+<a target="_blank" href="#"><img src="https://www.google.com/url?sa=i&url=http%3A%2F%2Frebloggy.com%2Fpost%2Fadventure-time-bmo-dancing-gif-happy-gif%2F61901932983&psig=AOvVaw1gIIiJk9M3SFMUaCb9Tuzi&ust=1609782263828000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCIiA67KogO4CFQAAAAAdAAAAABAK"
+  alt="BMO Dancing"></a>
+
+<!--You can make a Bulleted Unordered List meaning a list but in bullet point
+style you would use the "<ul>" element signifiying it as an unordered list and
+the "<li>" element as the listing, remember to add slashes to singnify it ends!
+-->
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Python</li>
+  <li>Javascript</li>
+</ul>
+
+<!-- You can also make an ordered list meaning it's with numbers, it's basically
+like the coding above with the unordered list but you're using the element "<ol>"
+to signify an ordered list! -->
+<ol>
+  <li>Bananas</li>
+  <li>Strawberries</li>
+  <li>Kiwis</li>
+  <li>Watermelon</li>
+</ol>
+
+<!-- You can make a Web Form! Let's start off with how to make a text field.
+The input element is a convenient way to get input from your user! There's
+certain types of input so you would use the "type" attribute and give it the
+value "text", it's also a self closing tab like "img" -->
+<input type="text">
+
+<!-- You can put placeholder text in our text field! For example, whenever you
+need to log in into something and you see password and username in the boxes,
+that is placeholder text! To do this we're just adding the placeholder attribute
+and giving it the value of what we want as the placeholder -->
+<input type="text" placeholder=" this is placeholder text">
+
+<!-- If you want data to actually be submitted to a server than using html then
+the "<form>" element will you your friend. The form element should have the
+action attribute and that value would be the server you want to submit the data
+to, you would also nest your input element within the form element like this -->
+<form action="/url-where-you-want-to-submit-form-data">
+  <input type="text" placeholder=" this is placeholder text">
+</form>
+
 </main>

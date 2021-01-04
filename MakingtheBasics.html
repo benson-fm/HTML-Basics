@@ -5,6 +5,8 @@ date with current html, just put the following code below, this is necessary-->
 <!-- This element helps search engines and other developers find the main
 content of your page!, this would be at the start and end of the main content-->
 <main>
+<!-- Main Content -->
+</main>
 
 <!-- As you can see, these are header titles which are bigger than regualr text,
 h1 being the biggest and h6 being the smallest -->
@@ -99,6 +101,8 @@ to signify an ordered list! -->
   <li>Watermelon</li>
 </ol>
 
+<!-- This section is in regards of making a form -->
+
 <!-- You can make a Web Form! Let's start off with how to make a text field.
 The input element is a convenient way to get input from your user! There's
 certain types of input so you would use the "type" attribute and give it the
@@ -119,4 +123,106 @@ to, you would also nest your input element within the form element like this -->
   <input type="text" placeholder=" this is placeholder text">
 </form>
 
-</main>
+<!-- Let's make a submit button, by clicking this button it will send data from
+the form to the specified URL in the form's action attribute, this would be
+nested in the form element, with the element "<button>" and the attribute "type"
+equaling "submit", then add the text and closing tag, below is an example with
+the submit button nested into the form element -->
+<form action="/url-where-you-want-to-submit-form-data">
+  <input type="text" placeholder=" this is placeholder text">
+  <button type="submit">Submit</button>
+</form>
+
+<!-- Want to make a field of input required, meaning the user is required to
+input information into specific form fields, you can simply put required in your
+input element, this will make it required! -->
+<input type="text" placeholder="Password" required>
+
+<!-- There different types of input you can use, one of these are by using Radio
+buttons where the user will only be able to select one answer out of multiple
+options, kind of like in a multiple choice test. Radio buttons are a type of
+input, each input element being one option would be nested in a label element,
+this is so that it will automatically associate the radio buttion input with the
+label element surrounding it. Related radio buttons should have the same name
+attribute to create a radio button group. This enjures that only one option gets
+picked. It's considered best practice to set a for attribute on the label element
+with a value that matches the id of the input element. -->
+<label for="dogs">
+  <input id="dogs" type="radio" name="animals">dogs
+</label>
+<label for="cats">
+  <input id="cats" type="radio" name="animals">cats
+</label>
+<label for="rock">
+  <input id="rock" type="radio" name="animals">Patrick's Rocky
+</label>
+
+<!-- Checkboxes is another type of input you can use. These can be nested in
+their own label element and by doing this it will automatically associate the
+checkbox input with the label element surrounding it. It's also good practice to
+set the for attribute on the label element as the same as the id of the input,
+the steps are completely the same as coding the radio type of input but instead
+it's checkboxes allowing you to select more than one! -->
+<label for="hamburger">
+  <input id="hamburger" type="checkbox" name="food">hamburger
+</label>
+<label for="hotdog">
+  <input id="hotdog" type="checkbox" name="food">hotdog
+</label>
+<label for="pizza">
+  <input id="pizza" type="checkbox" name="food">pizza
+</label>
+
+<!-- When the form is submitted, the data is sent to the specified server, the
+inputs of are reported by the value attribute, if you don't iuse the value
+attribute, the sever will either recieve the data as on or off which isn't
+helpful, so it's important to add a value to the value atrribute! -->
+<label for="pc">
+  <input id="pc" value="pc" type="radio" name="gaming">PC
+</label>
+<label for="mobile">
+  <input id="mobile" value="mobile" type="radio" name="gaming">Mobile
+</label>
+<label for="console">
+  <input id="console" value="console" type="radio" name="gaming">Console
+</label>
+
+<!-- With forms, you can set things automatically checked by adding the checked
+attribute within the input element -->
+<label for="icecream">
+  <input id="icecream" value="icecream" type="radio" name="cold" checked>icecream
+</label>
+
+<!-- End of form -->
+
+<!-- The <div> element is known as the division element which is a general
+purpose container for other elements-->
+<div>
+  <h2>Lorem Ipsum</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+</div>
+
+<!-- Organization of your code is important! You can organize your code by using
+specific tags like <html>, <head>, <body>, <footer>, <main>, and many others -->
+<!DOCTYPE hmtl>
+<html>
+  <head>
+    <!-- metadata elements like link, meta, title, and style go here -->
+  </head>
+  <body>
+    <!-- page contents -->
+  </body>
+</html>
+
+<!-- <meta> goes within the header, metadata is information about data, it'
+usually used to specify character set, page description, keywords, author of
+the document, and viewport settings below are some example, for further info
+about meta tags, visit this link! https://www.w3schools.com/tags/tag_meta.asp-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="HTML Basics">
+  <meta name="author" content="Patrick Star">
+  <meta name="keywords" content="HTML">
+</head>
